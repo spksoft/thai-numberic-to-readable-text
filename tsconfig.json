@@ -1,8 +1,17 @@
 {
-  "lib": [">es6"],
   "compilerOptions": {
     "outDir": "dist",
-    "rootDir": "src"
+    "moduleResolution": "node",
+    "target": "es5",
+    "module": "commonjs",
+    "declaration": true,
+    "noImplicitAny": false,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "experimentalDecorators": true,
+    "strict": true,
+    "lib": ["es2015", "dom"],
+    "typeRoots": ["node_modules/@types/"]
   },
-  "include": ["src/**/*.ts"]
+  "exclude": ["node_modules", "distribution"]
 }

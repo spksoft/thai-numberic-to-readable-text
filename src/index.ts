@@ -50,7 +50,6 @@ const convertNumberToReadableThaiText = (inputNumber: Number): String => {
     "0": ""
   };
   let result = "";
-  let prev = {};
   arrayOfEachNumberWithMarker.forEach((o, i) => {
     if (o.marker === "หน่วย") {
       if (o.value === "1" && i !== 0) {
@@ -73,7 +72,6 @@ const convertNumberToReadableThaiText = (inputNumber: Number): String => {
         result += "";
       } else result += dictionary[o.value] + o.marker;
     }
-    prev = { ...o };
   });
   return result;
 };
