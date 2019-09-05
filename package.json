@@ -1,0 +1,23 @@
+{
+  "name": "thai-numberic-to-readable-text",
+  "version": "0.0.1",
+  "description": "thai-numberic-to-readable-text is a js libery to convert numberic to text in thai ",
+  "main": "index.js",
+  "author": "Sippakorn Raksakiart (spksoft)",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "build": "tsc",
+    "start": "yarn build && node dist/index.js",
+    "test": "jest"
+  },
+  "dependencies": {
+    "typescript": "^3.6.2"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.18",
+    "@types/node": "^12.7.4",
+    "jest": "^24.9.0",
+    "ts-jest": "^24.0.2"
+  }
+}
