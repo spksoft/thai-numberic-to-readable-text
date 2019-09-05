@@ -65,4 +65,16 @@ describe("test convertNumberToReadableThaiText", () => {
     const result = convertNumberToReadableThaiText(11111);
     expect(result).toBe("หนึ่งหมื่นหนึ่งพันหนึ่งร้อยสิบเอ็ด");
   });
+  test("36278 shoud return สามหมื่นหกพันสองร้อยเจ็ดสิบแปด", () => {
+    const result = convertNumberToReadableThaiText(36278);
+    expect(result).toBe("สามหมื่นหกพันสองร้อยเจ็ดสิบแปด");
+  });
+  test("111111 shoud return หนึ่งแสนหนึ่งหมื่นหนึ่งพันหนึ่งร้อยสิบเอ็ด", () => {
+    const result = convertNumberToReadableThaiText(111111);
+    expect(result).toBe("หนึ่งแสนหนึ่งหมื่นหนึ่งพันหนึ่งร้อยสิบเอ็ด");
+  });
+  test("109201 shoud return หนึ่งแสนเก้าพันสองร้อยเอ็ด", () => {
+    const result = convertNumberToReadableThaiText(109201);
+    expect(result).toBe("หนึ่งแสนเก้าพันสองร้อยเอ็ด");
+  });
 });
