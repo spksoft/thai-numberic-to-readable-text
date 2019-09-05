@@ -1,6 +1,7 @@
 {
   "name": "thai-numberic-to-readable-text",
   "version": "0.0.1",
+  "repository": "spksoft/thai-numberic-to-readable-text",
   "description": "thai-numberic-to-readable-text is a js libery to convert numberic to text in thai ",
   "main": "index.js",
   "author": "Sippakorn Raksakiart (spksoft)",
@@ -13,6 +14,9 @@
   },
   "dependencies": {
     "typescript": "^3.6.2"
+  },
+  "publishConfig": {
+    "access": "dist"
   },
   "devDependencies": {
     "@types/jest": "^24.0.18",
