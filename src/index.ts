@@ -1,4 +1,6 @@
-const convertNumberToReadableThaiText = (inputNumber: Number): String => {
+export const convertNumberToReadableThaiText = (
+  inputNumber: Number
+): String => {
   const arrayOfEachNumber = String(inputNumber).split("");
   const arrayOfEachNumberWithMarker = arrayOfEachNumber
     .reverse()
@@ -75,4 +77,3 @@ const convertNumberToReadableThaiText = (inputNumber: Number): String => {
   });
   return result;
 };
-export default convertNumberToReadableThaiText;

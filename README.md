@@ -26,8 +26,9 @@ npm install --save thai-numberic-to-readable-text
 ## Usage
 
 ```javascript
-const convertNumberToReadableThaiText = require("thai-numberic-to-readable-text")
-  .default;
+const {
+  convertNumberToReadableThaiText
+} = require("thai-numberic-to-readable-text");
 
 const result = convertNumberToReadableThaiText(109201);
 console.log(result);

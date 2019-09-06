@@ -1,4 +1,4 @@
-import convertNumberToReadableThaiText from "./index";
+import { convertNumberToReadableThaiText } from "./index";
 
 describe("test convertNumberToReadableThaiText", () => {
   test("1 shoud return หนึ่ง", () => {

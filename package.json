@@ -1,6 +1,6 @@
 {
   "name": "thai-numberic-to-readable-text",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/spksoft/thai-numberic-to-readable-text.git"
@@ -12,7 +12,8 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "build": "tsc",
+    "clean": "rm -rf dist/",
+    "build": "npm run clean && tsc",
     "start": "yarn build && node dist/index.js",
     "test": "jest"
   },
